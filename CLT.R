@@ -30,3 +30,4 @@ fg <- sample(x=c(0,1),size=8*10,replace=TRUE,prob=c(.20,.80))
 fgm <- matrix(fg,nrow=10)
 fgmd <- cbind(fgm,apply(fgm,1,mean)*100)
 fgmd
+
