@@ -32,5 +32,12 @@ summary(return)
 apply(return,1,mean(return),median,mode)
 ?apply
 library(doBy)
-summaryBy(data = return, 
-          FUN = list(mean, max, min, median, sd))
+summaryBy(return, data = data1,FUN = c(mean, max, min, median, sd))
+myFun <- function(x) {
+  c(min = min(x), max = max(x), 
+    mean = mean(x), median = median(x), 
+    std = sd(x))
+}
+tapply(data1,myFun)
+tapply(return,mean)
+?tapply
