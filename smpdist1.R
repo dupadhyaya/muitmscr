@@ -1,21 +1,21 @@
-# Sampling Distribution
+# Sampling Distribution ####
 plot.new()
 
-# Generate Random Nos from ND
+# Generate Random Nos from ND ####
 rnorm(100)
 rnorm(100)*10
 round(rnorm(100)*10)
 x=round(rnorm(100)*10)
 meanx = mean(x)
 sdx = sd(x)
-# plot
+# plot ####
 plot(density(x))
 
-# dnorm() returns the probability density function or pdf.
+# dnorm() returns the probability density function or pdf.####
 dnorm(1)
 dnorm(-2)
 dnorm(3)
-#height of the normal curve at some value along the x-axis.
+#height of the normal curve at some value along the x-axis. ####
 dnorm(1,mean=meanx,sd=sdx)
 dnorm(10,mean=meanx,sd=sdx)
 dnorm(10,mean=meanx,sd=sdx)
